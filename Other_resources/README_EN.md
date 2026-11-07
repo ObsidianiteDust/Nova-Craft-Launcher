@@ -30,11 +30,11 @@ NCL is not just another Minecraft launcher with a patched shell, but a **modular
 
 ## 🏗️ Technical Architecture
 
-Rejecting the monolithic giant, we adopt a **.NET + Go** hybrid architecture to achieve a win-win situation of performance and security:
+Rejecting the monolithic giant, we adopt a **pure C# / .NET + Avalonia** modular layered architecture, balancing performance and security within a single technology stack:
 
 - **Presentation Layer (C# / Avalonia)**: Responsible for cross-platform UI rendering, using MVVM and compile-time binding to ensure a smooth interface under complex data.
-- **Core Engine (Go)**: Acts as an independent daemon process, dedicated to handling high-concurrency downloads, low-level file I/O, hash verification, and local indexing.
-- **IPC Communication**: The UI and engine communicate through local Sockets, achieving **crash isolation** (engine exceptions will not cause the software to crash), and supporting future plugins in any language to connect via JSON-RPC.
+- **Core Engine (C# / .NET class library)**: An independent class library handling download scheduling, low-level file I/O, hash verification, and local indexing, building high-concurrency pipelines on `async/await` and `Channel`, and testable independently of the UI.
+- **Module Boundaries**: The UI and engine communicate only through abstract interfaces (dependency injection), keeping one-way dependencies and loose coupling for easier future extraction, replacement, or extension.
 
 ## ✨ Architecture Goals
 
@@ -47,7 +47,7 @@ Rejecting the monolithic giant, we adopt a **.NET + Go** hybrid architecture to 
 ## 🗺️ Roadmap
 
 - **#0** — Repository initialization, interface definition, and specification establishment *(Current Goal)*
-- **#1** — Core framework and GUI skeleton (Avalonia shell, Go engine, IPC communication)
+- **#1** — Core framework and GUI skeleton (Avalonia shell, C# engine core, module layering and dependency injection)
 - **#2** — Java Client MVP (Startup pipeline, download/verification kernel, Java management)
 - **#3** — Java Server lifecycle management (Console, RCON, process daemon)
 - **#4** — Content management system and all-platform expansion (Modpacks, Bedrock Edition, plugin ecosystem)
