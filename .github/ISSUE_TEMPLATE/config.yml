@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 讨论区 (Discussions)
+    url: https://github.com/ZhangXaohan-awa/Nova-Craft-Launcher/discussions
+    about: 架构讨论、玩法求助、经验交流、Mod/整合包问题，请优先前往讨论区。
+  - name: 🐧 NCL 用户交流群 (QQ)
+    url: https://qm.qq.com/q/FKTqjgBKIC
+    about: 实时求助与闲聊（非正式反馈渠道，正式问题仍建议走 Issue）。
+  - name: 📖 项目说明与常见问题
+    url: https://github.com/ZhangXaohan-awa/Nova-Craft-Launcher/blob/main/README.md
+    about: 提交前请先阅读 README，确认你的问题不属于已知情况。
