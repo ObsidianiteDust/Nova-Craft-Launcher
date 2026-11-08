@@ -1,0 +1,46 @@
+name: ⚡ 体验优化建议
+description: 对 NCL 现有功能的交互、性能或 UI 提出改进建议
+title: "[优化/Optimize] "
+labels: ["优化"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+       ### 🛑 提交前必读 (Pre-submission Checklist)
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: 确认事项
+      options:
+        - label: 我已在 Issues 页面中搜索，确认该优化点未被提交过。
+          required: true
+        - label: 我确认该内容**基于现有功能**，而不是要求新增功能。
+          required: true
+        - label: 我理解这涉及主观审美或操作习惯，维护者可能会基于设计规范拒绝该优化。
+          required: true
+
+  - type: textarea
+    id: location
+    attributes:
+      label: 📍 优化地点 (Location)
+      description: 是哪个页面、哪个按钮、还是底层的哪个逻辑？
+      placeholder: 请截图并圈出需要优化的地方。
+    validations:
+      required: true
+
+  - type: textarea
+    id: pain-point
+    attributes:
+      label: 😫 当前痛点 (Current Pain Point)
+      description: 现在的设计为什么让你觉得别扭？影响效率还是视觉不协调？
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: ✨ 期望的优化方案 (Expected Solution)
+      description: 你觉得应该怎么改？
+    validations:
+      required: true

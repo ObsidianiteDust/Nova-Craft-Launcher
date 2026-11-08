@@ -1,0 +1,71 @@
+name: 🐞 综合 BUG 反馈
+description: 提交 NCL 启动器本身出现的错误或异常
+title: "[漏洞/Bug] "
+labels: ["BUG"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+       ### 🛑 提交前必读 (Pre-submission Checklist)
+       请确认您已阅读以下内容，这能极大加快 Bug 的修复速度。
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: 确认事项
+      description: 请勾选以下所有选项
+      options:
+        - label: 我已在 Issues 页面中搜索，确认该 Bug 未被其他用户提交过。
+          required: true
+        - label: 我确认使用的是 NCL 的**最新版本**，且已尝试过重启软件或电脑，问题依然存在。
+          required: true
+        - label: 我理解开发者精力有限，BUG 修复需要时间，并愿意配合提供后续的日志信息。
+          required: true
+        - label: 我确认这是 NCL 本身的错误，**不是**因为 Mod 冲突或没装 Java 导致的（游戏崩溃请前往讨论区求助）。
+          required: true
+        - label: 我确认正在使用当前最新版的 NCL 启动器 。
+          required: true
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: 🐞 错误现象 (Describe the Bug)
+      description: 发生了什么？弹出了什么错误提示框？
+      placeholder: 请描述具体的错误表现，支持拖拽上传图片或录屏。
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 👣 如何复现 (To Reproduce)
+      description: 最关键的一步！请列出精确到每一步的操作流程。
+      placeholder: |
+        1. 打开 NCL 并进入 '...' 页面
+        2. 点击 '...' 按钮
+        3. 滚动到 '...' 位置
+        4. 触发错误...
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: 💻 环境信息 (Environment)
+      description: 请补充你的系统及运行环境信息。
+      placeholder: |
+        - 操作系统: (如 Windows 11 / macOS 14)
+        - NCL 版本: (如 v0.0.1-alpha)
+        - Java 版本: (如 Java 17)
+        - 游戏版本与加载器: (如 1.20.1 - Forge 47.2.0)
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 📋 错误日志/附件 (Logs & Attachments)
+      description: 请将日志文件拖拽到此处，**不要直接粘贴几千行代码**。
+      placeholder: 点击此处，然后拖拽日志文件。
+    validations:
+      required: false

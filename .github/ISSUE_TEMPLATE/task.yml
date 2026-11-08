@@ -1,0 +1,44 @@
+name: 🧩 维护任务
+description: "仅限仓库维护者使用：开发、文档、CI、发布等内部任务"
+title: "[任务/Task] 简明描述任务内容"
+labels: ["任务"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > ⚠️ **本模板面向仓库维护者。** 普通用户请勿使用——你的需求请通过「💡 新功能建议」或「⚡ 体验优化建议」提交。
+  - type: textarea
+    id: objective
+    attributes:
+      label: 🎯 任务目标 (Objective)
+      description: 这次要达成什么？一句话说清交付物。
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: 📦 影响范围 (Scope)
+      description: 涉及哪些模块/目录/文档？是否会改动公共接口或适配器规范？
+    validations:
+      required: true
+
+  - type: textarea
+    id: dod
+    attributes:
+      label: ✅ 验收标准 (Definition of Done)
+      description: 列出达到什么标准就可以关闭此任务（可参考列表格式）。
+      placeholder: |
+        - [ ] 标准 1
+        - [ ] 标准 2
+    validations:
+      required: true
+
+  - type: input
+    id: related
+    attributes:
+      label: 🔗 关联 Issue / PR
+      description: 关联的讨论、上游 Issue 或后续 PR。
+      placeholder: 例如：#12
+    validations:
+      required: false
