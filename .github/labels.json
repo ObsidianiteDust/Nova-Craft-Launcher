@@ -1,22 +1,38 @@
 [
-  {
-    "name": "BUG",
-    "color": "d73a4a",
-    "description": "启动器本身的功能异常、崩溃或报错"
-  },
-  {
-    "name": "新功能",
-    "color": "a2eeef",
-    "description": "全新的模块或机制建议"
-  },
-  {
-    "name": "优化",
-    "color": "1d76db",
-    "description": "现有功能的交互、性能或 UI 改进"
-  },
-  {
-    "name": "任务",
-    "color": "5319e7",
-    "description": "维护者内部任务: 开发、文档、CI、发布 (不开放给普通用户！)"
-  }
+
+  { "name": "📏 微型", "color": "c2e0c6", "description": "极小的改动（如错别字、单行逻辑）" },
+  { "name": "📏 小型", "color": "bfdadc", "description": "局部功能优化或极少代码修改" },
+  { "name": "📏 中型", "color": "d4c5f9", "description": "常规功能开发或 Bug 修复" },
+  { "name": "📏 大型", "color": "fef2c0", "description": "涉及多个模块或较大工作量" },
+  { "name": "📏 超大型", "color": "f9d0c4", "description": "核心架构变动或巨型 PR" },
+
+  { "name": "❌ 重复", "color": "d73a4a", "description": "已有详细内容在其他 Issue 提及" },
+  { "name": "❌ 拒绝/放弃", "color": "d73a4a", "description": "因技术难题、架构冲突或超出边界不予处理" },
+  { "name": "❌ 网络问题", "color": "d73a4a", "description": "由用户本地网络环境导致" },
+  { "name": "❌ 无有效信息", "color": "d73a4a", "description": "用户无法提供日志/截图/复现步骤" },
+  { "name": "❌ 无法复现", "color": "d73a4a", "description": "开发者无法复现该问题" },
+  { "name": "❌ 第三方", "color": "d73a4a", "description": "由第三方 API、底层库或系统导致" },
+  { "name": "🚫 忽略", "color": "000000", "description": "不符合发展方向、偏门或无效建议" },
+  { "name": "💵 成本过高", "color": "000000", "description": "当前维护者精力或项目资源无法支撑" },
+
+  { "name": "👌 完成", "color": "0e8a16", "description": "开发者已完成该内容，将在下一个版本合并" },
+
+  { "name": "💬 讨论中", "color": "fbca04", "description": "开发者正在与用户或社区讨论该内容" },
+  { "name": "💬 信息补充", "color": "fbca04", "description": "需要用户提供更详细的日志、环境信息或截图" },
+  { "name": "💬 需要复现", "color": "fbca04", "description": "需要稳定的复现步骤或开发者与用户共同排查" },
+  { "name": "💬 需要外部帮助", "color": "fbca04", "description": "项目组精力有限，诚邀社区大佬提交 PR 协助解决" },
+
+  { "name": "🕑 等待前置", "color": "5319e7", "description": "受制于其他任务或特定条件的完成" },
+  { "name": "🕑 等待合并", "color": "5319e7", "description": "代码已处理完毕，等待合入主分支" },
+  { "name": "⭕ 等待处理", "color": "5319e7", "description": "问题已确认，在待办排期中" },
+  { "name": "⏸️ 暂停", "color": "5319e7", "description": "该功能或任务目前处于搁置状态，近期没有计划" },
+  { "name": "⏳ 等待", "color": "5319e7", "description": "已确认需求或问题，但短期内优先制作其他内容" },
+
+  { "name": "📝 文档", "color": "1d76db", "description": "仅涉及文档、注释或翻译的修改" },
+  { "name": "🧪 实验性", "color": "bfdadc", "description": "新特性，可能存在不稳定或 API 变更" },
+  { "name": "🔥 破坏性", "color": "d93f0b", "description": "涉及底层大范围重构，可能影响旧版本兼容" },
+  { "name": "🔒 安全漏洞", "color": "d93f0b", "description": "涉及密钥泄露、路径穿越等安全问题" },
+  { "name": "🌍 跨平台", "color": "0075ca", "description": "针对 Windows / macOS / Linux 的兼容性问题" },
+  { "name": "🤝 优质", "color": "0e8a16", "description": "优质的 Issue，可在后续内容创作中参考" }
+
 ]

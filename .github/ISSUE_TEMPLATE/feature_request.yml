@@ -1,7 +1,7 @@
 name: 💡 新功能建议
 description: 提出 NCL 目前尚未拥有的全新功能
 title: "[新功能/Feature] "
-labels: ["新功能"]
+type: "新功能/Feature"
 body:
   - type: markdown
     attributes:

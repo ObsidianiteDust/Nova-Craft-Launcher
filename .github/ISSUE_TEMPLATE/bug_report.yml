@@ -1,7 +1,7 @@
 name: 🐞 综合 BUG 反馈
 description: 提交 NCL 启动器本身出现的错误或异常
 title: "[漏洞/Bug] "
-labels: ["BUG"]
+type: "漏洞/Bug"
 body:
   - type: markdown
     attributes:

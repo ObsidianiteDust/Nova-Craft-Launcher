@@ -1,7 +1,7 @@
 name: ⚡ 体验优化建议
 description: 对 NCL 现有功能的交互、性能或 UI 提出改进建议
 title: "[优化/Optimize] "
-labels: ["优化"]
+type: "优化/Optimize"
 body:
   - type: markdown
     attributes:

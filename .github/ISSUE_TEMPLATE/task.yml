@@ -1,7 +1,7 @@
 name: 🧩 维护任务
 description: "仅限仓库维护者使用：开发、文档、CI、发布等内部任务"
-title: "[任务/Task] 简明描述任务内容"
-labels: ["任务"]
+title: "[任务/Task] "
+type: "任务/Task"
 body:
   - type: markdown
     attributes:
